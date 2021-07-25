@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Resident Registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div>
+    <form [formGroup]="residentForm">
+      <ion-list lines="full">
+        <ion-list-header class="title" lines="full">
+          <ion-label lines="full">
+            Personal Information
+          </ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-label>Name</ion-label>
+          <ion-input class="ion-text-right" formControlName="name" clearInput type="text" placeholder="Name">
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Gender</ion-label>
+          <ion-select formControlName="gender" placeholder="Gender">
+            <ion-select-option value="male">Male</ion-select-option>
+            <ion-select-option value="female">Female</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Contact</ion-label>
+          <ion-input class="ion-text-right" formControlName="contact" clearInput type="tel" inputmode="tel"
+            placeholder="Contact"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Address</ion-label>
+          <ion-input class="ion-text-right" formControlName="address" clearInput type="text" placeholder="Address">
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>LivingUnit</ion-label>
+          <ion-select class="ion-text-right" formControlName="livingunit" interface="popover" placeholder="LivingUnit">
+            <!--
+            <ion-select-option *ngFor="let unit in units" value="unit">{{unit.unitcode}}</ion-select-option>
+            -->
+          </ion-select>
+        </ion-item>
+        <ion-list-header class="title" lines="full">
+          <ion-label lines="full">
+            Account Information 
+          </ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-label>Username</ion-label>
+          <ion-input class="ion-text-right" formControlName="username" clearInput type="text" placeholder="Username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Password</ion-label>
+          <ion-input class="ion-text-right" formControlName="password" clearInput type="text" placeholder="Password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Please Upload a Photo</ion-label>
+          <ion-button>Button</ion-button>
+        </ion-item>
+      </ion-list>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "fypMobileApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

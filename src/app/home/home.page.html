@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+  <div id="container" class="padding-left-right">
+    <ion-list>
+      <img src="../../assets/eye.svg" width="200px">
+      <ion-item>
+        <ion-input [(ngModel)]="username" required="true" class="padding-left-right" placeholder="Username" type="text" position="stacked"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="password" required="true" class="padding-left-right" placeholder="Password" type="password" position="stacked"></ion-input>
+      </ion-item>
+    </ion-list>
+      <ion-button (click)="submitLogIn()" expand="full">Log In </ion-button>
+      <ion-button routerLink="/registration" expand="full">Register</ion-button>
+  </div>
+  
+</ion-content>
